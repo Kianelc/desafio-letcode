@@ -66,4 +66,18 @@
   - Programação imperativa: descreve as etapas de **como** a interface do usuário deve ser atualizada, semelhante a dar instruções passo a passo a um chef sobre como fazer uma pizza.
   - Programação declarativa: declara **o que** a interface do usuário deve mostrar, como pedir uma pizza sem se preocupar com os passos necessários para fazê-la.
   O React é uma biblioteca declarativa em que os desenvolvedores indicam ao React o que desejam que aconteça com a interface do usuário, e o React se encarrega das etapas necessárias para atualizar o DOM.
+
+#### 2. **Capítulo 4: Introdução ao React**
+
+- **Principais Aprendizados:**
+  - Refatoração do código JavaScript
+    - Adição da biblioteca React
+  - Compreensão sobre o que é JSX.
+
+- **Resumo:**
+  - `ReactDOM.createRoot()`: Cria uma raiz para renderizar componentes React dentro de um nó DOM do navegador.
+  - `root.render()`: Renderiza o código React no DOM.
+  JSX é uma sintaxe semelhante ao HTML usada em JavaScript para descrever a interface do usuário. Como os navegadores não entendem JSX, é necessário um compilador como o Babel para converter JSX em JavaScript.
+  Ao refatorar código JavaScript puro para React, observa-se uma redução no código redundante. O React é uma biblioteca que fornece trechos de código reutilizáveis para gerenciar a interface do usuário.
+  
 ---
