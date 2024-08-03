@@ -22,8 +22,8 @@ O método de avaliação será através das interações na comunidade, com part
 ## Planejamento de Estudos
 
 ### Semana 1 - Estudo de React
-- [ ] [Estudo do capítulo 1 e 2 de React](https://github.com/Kianelc/desafio-letcode/issues/1)
-- [ ] [Estudo do capítulo 3 e 4 de React](https://github.com/Kianelc/desafio-letcode/issues/2)
+- [x] [Estudo do capítulo 1 e 2 de React](https://github.com/Kianelc/desafio-letcode/issues/1)
+- [x] [Estudo do capítulo 3 e 4 de React](https://github.com/Kianelc/desafio-letcode/issues/2)
 - [ ] [Estudo do capítulo 5 e 6 de React](https://github.com/Kianelc/desafio-letcode/issues/3)
 - [ ] [Estudo do capítulo 7 e 8 de React](https://github.com/Kianelc/desafio-letcode/issues/4)
 - [ ] [Estudo do capítulo 9 de React](https://github.com/Kianelc/desafio-letcode/issues/5)
@@ -49,7 +49,8 @@ O método de avaliação será através das interações na comunidade, com part
 
 ## Estrutura do Repositório
 
-- **/estudos**: Contém registros diários dos estudos.
+- **/estudos/registro_estudos.md**: Contém registros diários dos estudos.
+- **/estudos/materiais_adicionais**: Contém resumos complementares e imagens de apoio para o conteúdo estudado.
 - **/atividade_fisica/registro_atividades.md**: Contém um registro das atividades físicas realizadas, com monitoramento feito pelo aplicativo Strava.
 - **/projeto_pessoal**: Contém o código-fonte e arquivos relacionados ao projeto pessoal.
 
