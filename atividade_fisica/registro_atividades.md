@@ -4,6 +4,7 @@
 
 - [Dia 1 - 01/08/2024](#dia-1---01082024)
 - [Dia 2 - 02/08/2024](#dia-2---02082024)
+- [Dia 3 - 03/08/2024](#dia-3---03082024)
 
 ---
 
@@ -23,3 +24,9 @@ As atividades físicas são monitoradas pelo aplicativo Strava.
 - **Duração:** 44min 35s
 - **Distância:** 6,14 km
 - **Link do Strava:** [Link para a atividade no Strava](https://strava.app.link/NcG274BzKLb)
+
+### Dia 3 - 03/08/2024
+- **Atividade:** Pedalada
+- **Duração:** 56min 48s
+- **Distância:** 15,9 km
+- **Link do Strava:** [Link para a atividade no Strava](https://strava.app.link/EJwMs9KXLLb)
