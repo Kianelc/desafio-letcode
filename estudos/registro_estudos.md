@@ -4,6 +4,7 @@
 
 - [Dia 01 - Estudo do Capítulo 1 e 2 de React](#01082024)
 - [Dia 02 - Estudo do capítulo 3 e 4 de React](#02082024)
+- [Dia 03 - Estudo do capítulo 5 e 6 de React](#03082024)
 
 ---
 
@@ -54,10 +55,10 @@
 #### 1. **Capítulo 3: Atualizando a IU com Javascript**
 
 - **Principais Aprendizados:**
-  - Contrução de um projeto utilizando métodos JavaScript e DOM
-    - Manipulação de DOM com JavaScript
-  - Diferença entre DOM e HTML
-  - Diferença entre programação imperativa e declarativa
+  - Contrução de um projeto utilizando métodos JavaScript e DOM.
+    - Manipulação de DOM com JavaScript.
+  - Diferença entre DOM e HTML.
+  - Diferença entre programação imperativa e declarativa.
 - **Resumo:**
   Ao adicionar elementos ao DOM via código, como demonstrado no exemplo do Capítulo 3, é possível observar a diferença entre o HTML e o DOM. Usando as ferramentas de desenvolvimento do navegador, pode-se verificar a inclusão dos elementos no DOM, que não está refletida no código-fonte original (o arquivo HTML que foi contruído no decorrer do Capítulo 3).
   - HTML: representa o **conteúdo inicial da página**;
@@ -70,14 +71,59 @@
 #### 2. **Capítulo 4: Introdução ao React**
 
 - **Principais Aprendizados:**
-  - Refatoração do código JavaScript
-    - Adição da biblioteca React
+  - Refatoração do código JavaScript.
+    - Adição da biblioteca React.
   - Compreensão sobre o que é JSX.
 
 - **Resumo:**
   - `ReactDOM.createRoot()`: Cria uma raiz para renderizar componentes React dentro de um nó DOM do navegador.
   - `root.render()`: Renderiza o código React no DOM.
+
   JSX é uma sintaxe semelhante ao HTML usada em JavaScript para descrever a interface do usuário. Como os navegadores não entendem JSX, é necessário um compilador como o Babel para converter JSX em JavaScript.
   Ao refatorar código JavaScript puro para React, observa-se uma redução no código redundante. O React é uma biblioteca que fornece trechos de código reutilizáveis para gerenciar a interface do usuário.
   
+---
+
+## 03/08/2024
+
+### Capítulos Estudados
+
+#### 1. **Capítulo 5: Construindo UI com Componentes**
+
+- **Principais Aprendizados:**
+  - Conceitos básicos do React.
+  - Estrutura e criação de componentes em React.
+  - Contrução de um componente.
+
+- **Resumo:**
+**Conceitos Fundamentais do React**
+- Components
+- Props
+- State
+**Componentes em React:**
+- **Componentes:** Blocos de construção da interface do usuário. Cada componente encapsula uma funcionalidade ou parte da interface, tornando-se independente e reutilizável. Isso facilita a manutenção e a reutilização do código.
+  - **Definição e Funcionamento:** No React, um componente é uma função que retorna elementos de UI. Deve começar com letra maiúscula para diferenciar de elementos HTML e código JavaScript.
+  - **Sintaxe:** Componentes são definidos entre colchetes angulares `<>`, similar às tags HTML.
+- **Aninhamento de Componentes:** Componentes React podem ser aninhados uns dentro dos outros, formando uma árvore de componentes, assim como os elementos HTML.
+
+#### 2. **Capítulo 6: Exibindo dados com props**
+
+- **Principais Aprendizados:**
+  - Contrução de uma propriedade.
+  - Criação e uso de propriedades (props) em React.
+  - Utilização de variáveis em JSX e iteração por listas.
+
+- **Resumo:**
+**Propriedades (props) em React: Fundamentos e Estrutura**
+- **Propriedades:** Em React, componentes podem aceitar argumentos personalizados chamados "props". Esses props modificam o comportamento ou a aparência do componente quando ele é renderizado.
+  - **Fluxo de dados:** No React, os dados fluem de cima para baixo na árvore de componentes, seguindo um fluxo de dados unidirecional.
+  - **Componentes aninhados:** Props podem ser passadas dos componentes pais para os filhos, permitindo a customização de componentes aninhados.
+  - **Desestruturação:** Props são objetos que podem ser desestruturados diretamente nos parâmetros da função para facilitar o acesso aos seus valores. Para utilizar esses valores em tags HTML de componentes, insere-se a variável entre chaves, conforme a sintaxe JSX, que permite a inclusão de JavaScript dentro da marcação.
+  - **Uso em JSX:** Qualquer expressão JavaScript pode ser adicionada dentro das chaves, incluindo:
+    - Propriedades de objeto
+    - Literais de modelo
+    - Valores retornados de funções
+    - Operadores ternários
+  - **Iteração por Listas:** Dentro dos componentes, é possível iterar por listas e utilizar métodos de array para manipular os dados e gerar elementos de UI. O React precisa identificar os itens de forma única, por isso é necessário adicionar a `key` com elementos únicos para que ele saiba quais elementos atualizar no DOM.
+
 ---
