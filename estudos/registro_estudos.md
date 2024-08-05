@@ -141,6 +141,11 @@ Os conceitos fundamentais do React incluem os **componentes**, que são as unida
   - O primeiro item do array é o valor do estado, que deve ser nomeado de forma descritiva.
   - O segundo item é a função para atualizar o valor, geralmente prefixada com "set", seguido do nome do estado.
   - O valor inicial do estado é definido passando um argumento para o hook, como `React.useState(0)`.
+
+  **Props vs. State**
+    - **Props:** Informações somente leitura passadas para componentes.
+    - **State:** Informações que podem mudar ao longo do tempo, geralmente devido a interações do usuário.
+
 > [!NOTE]
 >
 > O estado é iniciado e armazenado dentro de um componente e pode ser passado para componentes filhos como props. Contudo, a lógica para atualizar o estado deve permanecer no componente onde foi criado.
@@ -148,8 +153,15 @@ Os conceitos fundamentais do React incluem os **componentes**, que são as unida
 #### 2. **Capítulo 8: Do React ao Next.js**
 
 - **Principais Aprendizados:**
-  - 
+  - Visão geral do que foi aprendido dos Capítulos 1 a 8 (conceitos e código).
+  - Métodos de aprendizado do React.
+  - Visão geral do que será apresentado nos próximos capítulos.
+  - Visão geral de como o Next.js facilita a construção de aplicativos React.
 
-- **Resumo:**
+- **Resumo:** Neste capítulo, foi apresentado um panorama dos conceitos e códigos abordados até o momento, com ênfase em três elementos essenciais para o desenvolvimento em React: **componentes**, **props** e **state**.
+
+A prática é fundamental para o aprendizado efetivo de qualquer tecnologia. Portanto, é possível integrar o React gradualmente em um site existente utilizando a tag `<script>` para adicionar pequenos componentes. No entanto, a criação de uma aplicação completa com React proporciona uma experiência mais rica e proveitosa tanto para o usuário quanto para o desenvolvedor.
+
+Embora o React ofereça muitos benefícios na construção de interfaces, o desenvolvimento de aplicativos escaláveis exige um maior esforço, conhecimento avançado e uma estrutura inicial apropriada, como os recursos mais recentes, como **Server** e **Client Components**. Para otimizar esse processo, o framework Next.js foi criado para simplificar a instalação e configuração, além de oferecer funcionalidades adicionais que facilitam a construção de aplicativos React escaláveis.
 
 ---
