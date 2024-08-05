@@ -5,6 +5,7 @@
 - [Dia 01 - Estudo do Capítulo 1 e 2 de React](#01082024)
 - [Dia 02 - Estudo do capítulo 3 e 4 de React](#02082024)
 - [Dia 03 - Estudo do capítulo 5 e 6 de React](#03082024)
+- [Dia 04 - Estudo do capítulo 7 e 8 de React](#05082024)
 
 ---
 
@@ -125,5 +126,36 @@
     - Valores retornados de funções
     - Operadores ternários
   - **Iteração por Listas:** Dentro dos componentes, é possível iterar por listas e utilizar métodos de array para manipular os dados e gerar elementos de UI. O React precisa identificar os itens de forma única, por isso é necessário adicionar a `key` com elementos únicos para que ele saiba quais elementos atualizar no DOM.
+
+---
+
+## 05/08/2024
+
+### Capítulos Estudados
+
+#### 1. **Capítulo 7: Adicionando interatividade com o estado**
+
+- **Principais Aprendizados:**
+  - Contrução de um manipulador de estado.
+  - Compreensão sobre manipuladores de estado e eventos.
+  - Compreensão sobre estado e hooks.
+
+- **Resumo:**
+  Os eventos em React são escritos em camelCase e permitem que o aplicativo responda a interações do usuário, como cliques, toques e movimentos do mouse. Para isso, define-se uma função que manipula esses eventos.
+  React utiliza hooks para adicionar lógica aos componentes, como o gerenciamento de estado. Estado refere-se a qualquer informação na interface do usuário que muda ao longo do tempo devido a interações do usuário. O hook `useState()` é empregado para gerenciar o estado em componentes React, permitindo armazenar e atualizar valores, como a contagem de cliques em um botão. Ao usar `useState()`, retorna-se um array que pode ser desestruturado para acessar e manipular esses valores.
+  - O primeiro item do array é o valor do estado, que deve ser nomeado de forma descritiva.
+  - O segundo item é a função para atualizar o valor, geralmente prefixada com "set", seguido do nome do estado.
+  - O valor inicial do estado é definido passando um argumento para o hook, como `React.useState(0)`.
+  
+  > [!NOTE]
+  >
+  > O estado é iniciado e armazenado dentro de um componente e pode ser passado para componentes filhos como props. Contudo, a lógica para atualizar o estado deve permanecer no componente onde foi criado.
+
+#### 2. **Capítulo 8: Do React ao Next.js**
+
+- **Principais Aprendizados:**
+  - 
+
+- **Resumo:**
 
 ---
