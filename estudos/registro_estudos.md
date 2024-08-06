@@ -263,7 +263,7 @@
 
 - ## **Principais Aprendizados:**
 
-- Encerramento do curso.
+  - Encerramento do curso.
 
 - **Resumo:**
   O capítulo 11 conclui o curso de React Foundation e apresenta um resumo das principais atividades realizadas, tanto na prática quanto na teoria.
