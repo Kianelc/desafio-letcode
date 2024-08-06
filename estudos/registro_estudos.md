@@ -187,10 +187,12 @@
 #### 1. **Capítulo 9: Adicionando interatividade com o estado**
 
 - ## **Principais Aprendizados:**
+
   - Roteamento baseado em arquivos no Next.js.
   - React Server Components.
   - Criação automática de `layout.js`.
   - Migração do React para Next.js.
+
 - **Resumo:** O Next.js utiliza um sistema de roteamento baseado em arquivos, onde o roteamento é definido pela estrutura de pastas e arquivos, em vez de ser codificado manualmente.
 
   Além disso, o Next.js suporta os React Server Components, que permitem a renderização no servidor. No entanto, como esses componentes não suportam useState, é necessário utilizar um Client Component para esse propósito.
@@ -200,6 +202,70 @@
 #### 2. **Capítulo 10: Componentes de servidor e cliente**
 
 - ## **Principais Aprendizados:**
+
+  - Entendimento sobre o ambiente cliente-servidor e suas diferenças.
+  - Compreensão do limite de rede e como a renderização pode ser feita no servidor e no cliente.
+  - Diferença entre Componentes de Servidor e Componentes de Cliente em React.
+  - Estrutura dos gráficos de módulo do servidor e do cliente.
+  - Processo de renderização e atualização usando React e Next.js.
+  - Uso da diretiva `use client` e do recurso Fast Refresh no Next.js.
+
 - **Resumo:**
+  A web opera sobre a interação entre diferentes componentes e ambientes. Abaixo estão os principais conceitos básicos:
+
+  - **Ambiente cliente-servidor (Client-server environment):** onde o código da aplicação é executado.
+  - **Limite de rede (Network boundary):** o que separa o código do servidor e do cliente.
+
+  **Ambiente Cliente-Servidor**
+
+  - **Cliente**: Programa ou dispositivo usado pelo usuário para enviar solicitações ao servidor e acessar o código da aplicação. O cliente exibe a resposta recebida em uma interface interativa para o usuário.
+
+  - **Servidor**: Sistema responsável por armazenar o código da aplicação, processar as solicitações recebidas do cliente, executar cálculos e enviar as respostas apropriadas.
+
+  Cada ambiente tem capacidades e restrições específicas. O código para o servidor pode diferir do código para o cliente. Operações como busca de dados e gerenciamento do estado do usuário podem ser mais adequadas para um ambiente do que para o outro.
+
+  **Limite de Rede**
+
+  Em React, a renderização de componentes pode ser feita tanto no lado do servidor quanto no lado do cliente. Essa abordagem é útil para melhorar o desempenho e a experiência do usuário, separando as responsabilidades de renderização entre o servidor e o cliente. Por exemplo, é possível carregar dados e exibir uma lista de produtos no servidor usando Server Components, e renderizar o componente interativo `AddToCart` para cada produto no cliente usando Client Components.
+
+  **Componentes de Servidor e Cliente**
+
+  - **Componentes do Servidor (Server Components):** São renderizados no servidor e enviados prontos para o cliente. Eles são usados para gerar o HTML inicial e podem ser úteis para carregar e exibir dados pesados ou estáticos, como uma lista de produtos.
+
+  - **Componentes do Cliente (Client Components):** São renderizados no cliente (navegador) e são usados para funcionalidades interativas que necessitam de interação do usuário, como um botão de adicionar ao carrinho.
+
+  ![Componentes de Servidor e Cliente](./materiais_adicionais/imagens/server_client_component.png)
+
+  **Gráficos de Módulo**
+
+  Os componentes são organizados em dois "gráficos de módulo" (ou árvores), cada um representando um conjunto de componentes com responsabilidades distintas:
+
+  - **Gráfico de módulo do servidor:** contém todos os componentes que são renderizados no servidor. Esses componentes são responsáveis por gerar o HTML inicial que é enviado para o cliente.
+  - **Gráfico de módulo do cliente:** contém todos os componentes que são renderizados no cliente. Eles são responsáveis por adicionar interatividade e manipular a interface do usuário no navegador.
+
+  **Processo de Renderização e Atualização**
+
+  Quando os componentes do servidor são renderizados, o React cria um "payload" (carregamento útil) que inclui:
+
+  - **Resultado Renderizado:** O HTML final dos componentes do servidor.
+  - **Espaços Reservados:** Áreas no HTML onde os componentes do cliente serão inseridos.
+  - **Referências aos Arquivos JavaScript:** Os arquivos JavaScript necessários para renderizar os componentes do cliente.
+
+  Esse payload é enviado para o cliente, e o React usa essas informações para atualizar a página. Ele consolida o HTML gerado pelos componentes do servidor com os espaços reservados e os scripts para os componentes do cliente, permitindo uma experiência fluida e interativa.
+
+  O Next.js utiliza Componentes de Servidor por padrão, otimizando o desempenho do aplicativo e dispensando medidas adicionais para sua adoção.
+
+  A diretiva `use client`, colocada no topo do arquivo, instrui o React a renderizar o componente no cliente.
+
+  O recurso **Fast Refresh** atualiza automaticamente o navegador para refletir alterações salvas, oferecendo feedback instantâneo sobre edições feitas. Esse recurso vem pré-configurado com o Next.js.
+
+#### 3. **Capítulo 11: Próximos passos**
+
+- ## **Principais Aprendizados:**
+
+- Encerramento do curso.
+
+- **Resumo:**
+  O capítulo 11 conclui o curso de React Foundation e apresenta um resumo das principais atividades realizadas, tanto na prática quanto na teoria.
 
 ---
