@@ -17,19 +17,22 @@ O #DESAFIOLETCODE é um desafio de 20 dias que visa promover a consistência nos
 3. **Projeto Pessoal:** Dedicar tempo ao desenvolvimento de um projeto pessoal envolvendo React e Next.js.
 
 ### Avaliação
+
 O método de avaliação será através das interações na comunidade, com participação ativa nos stories utilizando a hashtag #desafioLetCode.
 
 ## Planejamento de Estudos
 
 ### Semana 1 - Estudo de React
+
 - [x] [Estudo do capítulo 1 e 2 de React](https://github.com/Kianelc/desafio-letcode/issues/1)
 - [x] [Estudo do capítulo 3 e 4 de React](https://github.com/Kianelc/desafio-letcode/issues/2)
 - [x] [Estudo do capítulo 5 e 6 de React](https://github.com/Kianelc/desafio-letcode/issues/3)
 - [x] [Estudo do capítulo 7 e 8 de React](https://github.com/Kianelc/desafio-letcode/issues/4)
-- [ ] [Estudo do capítulo 9 de React](https://github.com/Kianelc/desafio-letcode/issues/5)
-- [ ] [Revisão dos capítulos 1-9 de React](https://github.com/Kianelc/desafio-letcode/issues/6)
+- [x] [Estudo do capítulo 9 de React](https://github.com/Kianelc/desafio-letcode/issues/5)
+- [ ] [Revisão dos capítulos 1-11 de React](https://github.com/Kianelc/desafio-letcode/issues/6)
 
 ### Semana 2 - Estudo de Next.js
+
 - [ ] [Estudo do Capítulo 1 e 2 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/7)
 - [ ] [Estudo do Capítulo 3 e 4 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/8)
 - [ ] [Estudo do Capítulo 5 e 6 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/9)
@@ -39,6 +42,7 @@ O método de avaliação será através das interações na comunidade, com part
 - [ ] [Revisão dos capítulos 1-10 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/13)
 
 ### Semana 3 - Estudo de Next.js
+
 - [ ] [Estudo do Capítulo 11 e 12 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/14)
 - [ ] [Estudo do Capítulo 13 e 14 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/15)
 - [ ] [Estudo do Capítulo 15 e 16 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/16)
@@ -55,14 +59,18 @@ O método de avaliação será através das interações na comunidade, com part
 - **/projeto_pessoal**: Contém o código-fonte e arquivos relacionados ao projeto pessoal.
 
 ## Projeto Pessoal
+
 O projeto final será desenvolvido utilizando React e Next.js e será o resultado do aprendizado ao longo do desafio.
 
 ### Cursos Realizados
+
 - [Learn Next.js](https://nextjs.org/learn)
 - [Learn React Foundations](https://nextjs.org/learn/react-foundations)
 
 ## Monitoramento das Atividades Físicas
+
 O monitoramento das atividades físicas será realizado utilizando o aplicativo Strava. As informações das atividades serão registradas no arquivo `registro_atividades.md`.
 
 ## Link para o Projeto
+
 [GitHub Projects](https://github.com/users/Kianelc/projects/2)
