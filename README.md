@@ -25,7 +25,7 @@ O método de avaliação será através das interações na comunidade, com part
 - [x] [Estudo do capítulo 1 e 2 de React](https://github.com/Kianelc/desafio-letcode/issues/1)
 - [x] [Estudo do capítulo 3 e 4 de React](https://github.com/Kianelc/desafio-letcode/issues/2)
 - [x] [Estudo do capítulo 5 e 6 de React](https://github.com/Kianelc/desafio-letcode/issues/3)
-- [ ] [Estudo do capítulo 7 e 8 de React](https://github.com/Kianelc/desafio-letcode/issues/4)
+- [x] [Estudo do capítulo 7 e 8 de React](https://github.com/Kianelc/desafio-letcode/issues/4)
 - [ ] [Estudo do capítulo 9 de React](https://github.com/Kianelc/desafio-letcode/issues/5)
 - [ ] [Revisão dos capítulos 1-9 de React](https://github.com/Kianelc/desafio-letcode/issues/6)
 
