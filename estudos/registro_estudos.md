@@ -186,7 +186,7 @@
 
 #### 1. **Capítulo 9: Adicionando interatividade com o estado**
 
-- ## **Principais Aprendizados:**
+- **Principais Aprendizados:**
 
   - Roteamento baseado em arquivos no Next.js.
   - React Server Components.
@@ -201,7 +201,7 @@
 
 #### 2. **Capítulo 10: Componentes de servidor e cliente**
 
-- ## **Principais Aprendizados:**
+- **Principais Aprendizados:**
 
   - Entendimento sobre o ambiente cliente-servidor e suas diferenças.
   - Compreensão do limite de rede e como a renderização pode ser feita no servidor e no cliente.
@@ -261,7 +261,7 @@
 
 #### 3. **Capítulo 11: Próximos passos**
 
-- ## **Principais Aprendizados:**
+- **Principais Aprendizados:**
 
   - Encerramento do curso.
 
