@@ -5,6 +5,7 @@
 - [Dia 01 - Estudo do Capítulo 1 e 2 de React](#01082024)
 - [Dia 02 - Estudo do capítulo 3 e 4 de React](#02082024)
 - [Dia 03 - Estudo do capítulo 5 e 6 de React](#03082024)
+- [Dia 04 - Estudo do capítulo 7 e 8 de React](#05082024)
 
 ---
 
@@ -55,10 +56,10 @@
 #### 1. **Capítulo 3: Atualizando a IU com Javascript**
 
 - **Principais Aprendizados:**
-  - Contrução de um projeto utilizando métodos JavaScript e DOM.
-    - Manipulação de DOM com JavaScript.
+  - Contrução de um projeto usando JavaScript para manipulação do DOM.
   - Diferença entre DOM e HTML.
   - Diferença entre programação imperativa e declarativa.
+ 
 - **Resumo:**
   Ao adicionar elementos ao DOM via código, como demonstrado no exemplo do Capítulo 3, é possível observar a diferença entre o HTML e o DOM. Usando as ferramentas de desenvolvimento do navegador, pode-se verificar a inclusão dos elementos no DOM, que não está refletida no código-fonte original (o arquivo HTML que foi contruído no decorrer do Capítulo 3).
   - HTML: representa o **conteúdo inicial da página**;
@@ -71,17 +72,15 @@
 #### 2. **Capítulo 4: Introdução ao React**
 
 - **Principais Aprendizados:**
-  - Refatoração do código JavaScript.
-    - Adição da biblioteca React.
+  - Refatoração do código JavaScript e adição da biblioteca React.
   - Compreensão sobre o que é JSX.
 
 - **Resumo:**
   - `ReactDOM.createRoot()`: Cria uma raiz para renderizar componentes React dentro de um nó DOM do navegador.
   - `root.render()`: Renderiza o código React no DOM.
 
-  JSX é uma sintaxe semelhante ao HTML usada em JavaScript para descrever a interface do usuário. Como os navegadores não entendem JSX, é necessário um compilador como o Babel para converter JSX em JavaScript.
-  Ao refatorar código JavaScript puro para React, observa-se uma redução no código redundante. O React é uma biblioteca que fornece trechos de código reutilizáveis para gerenciar a interface do usuário.
-  
+  JSX é uma sintaxe semelhante ao HTML usada no JavaScript para descrever a interface do usuário. Como os navegadores não entendem JSX, é necessário utilizar um compilador como o Babel para convertê-lo em JavaScript. A refatoração de código JavaScript puro para React pode resultar em uma redução no código redundante, uma vez que o React é uma biblioteca que fornece componentes reutilizáveis para gerenciar a interface do usuário.
+
 ---
 
 ## 03/08/2024
@@ -96,15 +95,12 @@
   - Contrução de um componente.
 
 - **Resumo:**
-**Conceitos Fundamentais do React**
-- Components
-- Props
-- State
+Os conceitos fundamentais do React incluem os **componentes**, que são as unidades básicas da interface, as **props**, utilizadas para passar dados entre eles, e o **state**, que gerencia o estado interno de cada componente.
 **Componentes em React:**
-- **Componentes:** Blocos de construção da interface do usuário. Cada componente encapsula uma funcionalidade ou parte da interface, tornando-se independente e reutilizável. Isso facilita a manutenção e a reutilização do código.
-  - **Definição e Funcionamento:** No React, um componente é uma função que retorna elementos de UI. Deve começar com letra maiúscula para diferenciar de elementos HTML e código JavaScript.
-  - **Sintaxe:** Componentes são definidos entre colchetes angulares `<>`, similar às tags HTML.
-- **Aninhamento de Componentes:** Componentes React podem ser aninhados uns dentro dos outros, formando uma árvore de componentes, assim como os elementos HTML.
+  - **Componentes:** Blocos de construção da interface do usuário. Cada componente encapsula uma funcionalidade ou parte da interface, tornando-se independente e reutilizável. Isso facilita a manutenção e a reutilização do código.
+    - **Definição e Funcionamento:** No React, um componente é uma função que retorna elementos de UI. Deve começar com letra maiúscula para diferenciar de elementos HTML e código JavaScript.
+    - **Sintaxe:** Componentes são definidos entre colchetes angulares `<>`, similar às tags HTML.
+  - **Aninhamento de Componentes:** Componentes React podem ser aninhados uns dentro dos outros, formando uma árvore de componentes, assim como os elementos HTML.
 
 #### 2. **Capítulo 6: Exibindo dados com props**
 
@@ -113,9 +109,7 @@
   - Criação e uso de propriedades (props) em React.
   - Utilização de variáveis em JSX e iteração por listas.
 
-- **Resumo:**
-**Propriedades (props) em React: Fundamentos e Estrutura**
-- **Propriedades:** Em React, componentes podem aceitar argumentos personalizados chamados "props". Esses props modificam o comportamento ou a aparência do componente quando ele é renderizado.
+- **Resumo:** Em React, componentes podem aceitar argumentos personalizados chamados "props". Esses props modificam o comportamento ou a aparência do componente quando ele é renderizado.
   - **Fluxo de dados:** No React, os dados fluem de cima para baixo na árvore de componentes, seguindo um fluxo de dados unidirecional.
   - **Componentes aninhados:** Props podem ser passadas dos componentes pais para os filhos, permitindo a customização de componentes aninhados.
   - **Desestruturação:** Props são objetos que podem ser desestruturados diretamente nos parâmetros da função para facilitar o acesso aos seus valores. Para utilizar esses valores em tags HTML de componentes, insere-se a variável entre chaves, conforme a sintaxe JSX, que permite a inclusão de JavaScript dentro da marcação.
@@ -125,5 +119,49 @@
     - Valores retornados de funções
     - Operadores ternários
   - **Iteração por Listas:** Dentro dos componentes, é possível iterar por listas e utilizar métodos de array para manipular os dados e gerar elementos de UI. O React precisa identificar os itens de forma única, por isso é necessário adicionar a `key` com elementos únicos para que ele saiba quais elementos atualizar no DOM.
+
+---
+
+## 05/08/2024
+
+### Capítulos Estudados
+
+#### 1. **Capítulo 7: Adicionando interatividade com o estado**
+
+- **Principais Aprendizados:**
+  - Contrução de um manipulador de estado.
+  - Compreensão sobre manipuladores de estado e eventos.
+  - Compreensão sobre estado e hooks.
+
+- **Resumo:** Os eventos em React são escritos em camelCase e permitem que o aplicativo responda a interações do usuário, como cliques, toques e movimentos do mouse. Para isso, define-se uma função que manipula esses eventos.
+  - React utiliza hooks para adicionar lógica aos componentes, como o gerenciamento de estado.
+  - Estado refere-se a qualquer informação na interface do usuário que muda ao longo do tempo devido a interações do usuário.
+  
+  O hook `useState()` é empregado para gerenciar o estado em componentes React, permitindo armazenar e atualizar valores, como a contagem de cliques em um botão. Ao usar `useState()`, retorna-se um array que pode ser desestruturado para   acessar e manipular esses valores.
+  - O primeiro item do array é o valor do estado, que deve ser nomeado de forma descritiva.
+  - O segundo item é a função para atualizar o valor, geralmente prefixada com "set", seguido do nome do estado.
+  - O valor inicial do estado é definido passando um argumento para o hook, como `React.useState(0)`.
+
+  **Props vs. State**
+    - **Props:** Informações somente leitura passadas para componentes.
+    - **State:** Informações que podem mudar ao longo do tempo, geralmente devido a interações do usuário.
+
+> [!NOTE]
+>
+> O estado é iniciado e armazenado dentro de um componente e pode ser passado para componentes filhos como props. Contudo, a lógica para atualizar o estado deve permanecer no componente onde foi criado.
+
+#### 2. **Capítulo 8: Do React ao Next.js**
+
+- **Principais Aprendizados:**
+  - Visão geral do que foi aprendido dos Capítulos 1 a 8 (conceitos e código).
+  - Métodos de aprendizado do React.
+  - Visão geral do que será apresentado nos próximos capítulos.
+  - Visão geral de como o Next.js facilita a construção de aplicativos React.
+
+- **Resumo:** Neste capítulo, foi apresentado um panorama dos conceitos e códigos abordados até o momento, com ênfase em três elementos essenciais para o desenvolvimento em React: **componentes**, **props** e **state**.
+
+A prática é fundamental para o aprendizado efetivo de qualquer tecnologia. Portanto, é possível integrar o React gradualmente em um site existente utilizando a tag `<script>` para adicionar pequenos componentes. No entanto, a criação de uma aplicação completa com React proporciona uma experiência mais rica e proveitosa tanto para o usuário quanto para o desenvolvedor.
+
+Embora o React ofereça muitos benefícios na construção de interfaces, o desenvolvimento de aplicativos escaláveis exige um maior esforço, conhecimento avançado e uma estrutura inicial apropriada, como os recursos mais recentes, como **Server** e **Client Components**. Para otimizar esse processo, o framework Next.js foi criado para simplificar a instalação e configuração, além de oferecer funcionalidades adicionais que facilitam a construção de aplicativos React escaláveis.
 
 ---
