@@ -29,7 +29,7 @@ O método de avaliação será através das interações na comunidade, com part
 - [x] [Estudo do capítulo 5 e 6 de React](https://github.com/Kianelc/desafio-letcode/issues/3)
 - [x] [Estudo do capítulo 7 e 8 de React](https://github.com/Kianelc/desafio-letcode/issues/4)
 - [x] [Estudo do capítulo 9 de React](https://github.com/Kianelc/desafio-letcode/issues/5)
-- [ ] [Revisão dos capítulos 1-11 de React](https://github.com/Kianelc/desafio-letcode/issues/6)
+- [x] [Revisão dos capítulos 1-11 de React](https://github.com/Kianelc/desafio-letcode/issues/6)
 
 ### Semana 2 - Estudo de Next.js
 
