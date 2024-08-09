@@ -8,6 +8,7 @@
 - [Dia 4 - 05/08/2024](#dia-4---05082024)
 - [Dia 5 - 06/08/2024](#dia-5---06082024)
 - [Dia 6 - 07/08/2024](#dia-6---07082024)
+- [Dia 7 - 08/08/2024](#dia-7---08082024)
 
 ---
 
@@ -56,5 +57,12 @@ As atividades físicas são monitoradas pelo aplicativo Strava.
 
 - **Atividade:** Corrida
 - **Duração:** 43min 33s
-- **Distância:** 6.03 km
+- **Distância:** 6,03 km
 - **Link do Strava:** [Link para a atividade no Strava](https://strava.app.link/gEqZUrlvTLb)
+
+### Dia 7 - 08/08/2024
+
+- **Atividade:** Corrida
+- **Duração:** 44min 9s
+- **Distância:** 6,1 km
+- **Link do Strava:** [Link para a atividade no Strava](https://strava.app.link/02eKzrAaULb)
