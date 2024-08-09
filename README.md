@@ -33,7 +33,7 @@ O método de avaliação será através das interações na comunidade, com part
 
 ### Semana 2 - Estudo de Next.js
 
-- [ ] [Estudo do Capítulo 1 e 2 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/7)
+- [x] [Estudo do Capítulo 1 e 2 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/7)
 - [ ] [Estudo do Capítulo 3 e 4 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/8)
 - [ ] [Estudo do Capítulo 5 e 6 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/9)
 - [ ] [Estudo do Capítulo 7 e 8 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/10)
