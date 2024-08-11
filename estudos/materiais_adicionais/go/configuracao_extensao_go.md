@@ -58,7 +58,7 @@ Para garantir que a extensão Go no VS Code funcione corretamente, siga estes pa
    - Pressione `Ctrl+Shift+P` para abrir a paleta de comandos do VS Code.
    - Digite `Go: Install/Update Tools` e selecione essa opção.
 
-   ![Print do menu de instalação de ferramentas da extensão Go no VS Code](PRINT QUE SERÁ INSERIDO NA DOCUMENTAÇÃO)
+   ![Print do menu de instalação de ferramentas da extensão Go no VS Code](/estudos/materiais_adicionais/imagens/paleta-comandos.png)
 
 2. **Selecionar e instalar ferramentas necessárias**:
 
