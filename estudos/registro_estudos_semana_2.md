@@ -185,4 +185,34 @@
 
   A aplicação do componente `<Link />`, juntamente com a otimização da navegação e a exibição de links ativos, melhora significativamente a experiência do usuário em aplicações Next.js, tornando a navegação mais rápida e intuitiva.
 
+#### 2. **Capítulo 6: Configurando seu banco de dados**
+
+- **Principais Aprendizados:**
+
+  - Configuração do banco de dados PostgreSQL com o @vercel/postgres
+  - Integração do projeto com GitHub e Vercel
+  - Semeadura do banco de dados com dados iniciais
+  - Exploração e execução de consultas no banco de dados
+
+- **Resumo:**
+
+  Este capítulo aborda a configuração e integração de um banco de dados PostgreSQL utilizando o @vercel/postgres, além de como semear o banco de dados com dados iniciais e explorar suas tabelas. Também são cobertas práticas para solucionar problemas e executar consultas SQL.
+
+  - **Configuração do Banco de Dados:**
+
+    - **Criação e Integração:** O banco de dados PostgreSQL é configurado no painel do Vercel. É necessário criar uma conta no Vercel, conectar o repositório GitHub e criar um banco de dados na aba Storage. As credenciais devem ser copiadas para o arquivo `.env`, e o SDK @vercel/postgres deve ser instalado.
+    - **Região do Banco de Dados:** Definir a região como Washington DC (iad1) é crucial para reduzir a latência. Alterações na região não são possíveis após a criação do banco de dados.
+
+  - **Semeadura do Banco de Dados:**
+
+    - **Script de Semeadura:** A pasta `/app/seed` contém um script que cria as tabelas e insere dados iniciais no banco. Acesse `localhost:3000/seed` para rodar o script e popular o banco. Após a execução, a mensagem "Database seeded successfully" será exibida.
+    - **Problemas Comuns:** Verifique se as credenciais estão visíveis e corretamente copiadas. Se necessário, use `bcryptj` em vez de `bcrypt` e remova tabelas existentes com o comando SQL `DROP TABLE` se houver problemas ao semear o banco.
+
+  - **Exploração e Consultas:**
+
+    - **Exploração das Tabelas:** No painel Vercel, é possível visualizar as tabelas criadas, como usuários, clientes, faturas e receita. Certifique-se de que os dados estejam alinhados com o script de semeadura.
+    - **Execução de Consultas:** A aba "query" permite interagir com o banco de dados através de comandos SQL padrão. Utilize com cuidado, especialmente para comandos destrutivos como `DROP TABLE`.
+
+  A configuração do banco de dados PostgreSQL com o @vercel/postgres e a semeadura com dados iniciais são essenciais para o desenvolvimento do aplicativo, enquanto a exploração e execução de consultas ajudam a verificar e interagir com os dados armazenados.
+
 ---
