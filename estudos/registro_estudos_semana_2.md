@@ -4,6 +4,8 @@
 
 - [Dia 01 - Estudo do Capítulo 1 e 2 de Next](#07082024)
 - [Dia 02 - Estudo do Capítulo 3 e 4 de Next](#08082024)
+- [Dia 03 - Estudo do Capítulo 5 e 6 de Next](#09082024)
+- [Dia 04 - Estudo do Capítulo 7 e 8 de Next](#10082024)
 
 ---
 
@@ -216,3 +218,83 @@
   A configuração do banco de dados PostgreSQL com o @vercel/postgres e a semeadura com dados iniciais são essenciais para o desenvolvimento do aplicativo, enquanto a exploração e execução de consultas ajudam a verificar e interagir com os dados armazenados.
 
 ---
+
+## 10/08/2024
+
+### Capítulos Estudados
+
+#### 1. **Capítulo 7: Buscando Dados**
+
+- **Principais Aprendizados:**
+
+  - Abordagens para buscar dados: APIs, ORMs, SQL
+  - Utilização de componentes do servidor para buscar dados com segurança
+  - Conceito de cascatas de solicitações e como evitá-las
+  - Implementação de busca paralela de dados usando padrões JavaScript
+
+- **Resumo:**
+
+  Este capítulo explora as diversas formas de buscar dados em aplicações Next.js, detalhando como implementar consultas eficientes e otimizar o desempenho da página de visão geral do painel.
+
+  - **Escolhendo como Buscar Dados:**
+
+    - **Camada API:** Em Next.js, APIs servem como intermediárias entre o aplicativo e o banco de dados, oferecendo segurança e flexibilidade. Para acessar dados de serviços de terceiros ou proteger informações do cliente, utilize endpoints de API criados com Route Handlers.
+    - **Consultas de Banco de Dados:** Ao trabalhar com bancos de dados relacionais como o Postgres, você pode usar SQL diretamente ou ORMs para escrever a lógica necessária para interagir com o banco de dados. A abordagem direta evita a exposição de dados sensíveis ao cliente.
+
+  - **Usando Componentes do Servidor:**
+
+    - **Server Components:** Os componentes do servidor no Next.js permitem a execução de código no servidor, suportando promessas e simplificando a busca de dados assíncrona com async/await. Esta abordagem evita a necessidade de uma camada de API adicional e mantém a lógica pesada no servidor.
+
+  - **Consultas SQL e SDK Vercel Postgres:**
+
+    - **Uso de SQL:** O SQL é o padrão para consultas em bancos de dados relacionais e oferece flexibilidade e proteção contra injeções de SQL. O Vercel Postgres SDK facilita a interação com o banco de dados e protege contra vulnerabilidades comuns.
+
+    - **Implementação:** O arquivo `data.ts` contém funções de consulta, como `fetchRevenue` e `fetchLatestInvoices`, que podem ser usadas diretamente nos componentes da página para buscar e exibir dados de forma eficiente.
+
+  - **Cascatas de Solicitações:**
+
+    - **Conceito:** Cascatas ocorrem quando solicitações de dados são feitas sequencialmente, dependendo da conclusão de solicitações anteriores, o que pode afetar o desempenho. O Next.js utiliza renderização estática por padrão, o que pode resultar em dados desatualizados.
+
+    - **Evitar Cascatas:** Para evitar cascatas, inicie solicitações de dados em paralelo usando `Promise.all()` ou `Promise.allSettled()`. Esse padrão melhora o desempenho ao executar todas as buscas simultaneamente.
+
+  - **Busca Paralela de Dados:**
+
+    - **Padrão JavaScript:** Utilizar `Promise.all()` permite que múltiplas promessas sejam executadas ao mesmo tempo, otimizando a performance ao reduzir o tempo de espera. No entanto, se uma solicitação for mais lenta que as outras, pode impactar o tempo total de resposta.
+
+  A aplicação dessas práticas na busca de dados, juntamente com o uso eficiente de componentes do servidor e SQL, contribui para um desempenho otimizado e uma melhor experiência do usuário em aplicações Next.js.
+
+#### 2. **Capítulo 8: Renderização Estática e Dinâmica**
+
+- **Principais Aprendizados:**
+
+  - Definição e benefícios da renderização estática
+  - Conceito e aplicação da renderização dinâmica
+  - Impacto de buscas lentas de dados na renderização dinâmica
+
+- **Resumo:**
+
+  Este capítulo explora duas abordagens principais para renderização de páginas em Next.js: renderização estática e dinâmica, e como cada uma afeta a performance e a experiência do usuário.
+
+  - **Renderização Estática:**
+
+    - **Definição:** A renderização estática ocorre quando os dados são buscados e renderizados no servidor durante a compilação ou revalidação, com o resultado sendo armazenado em cache e servido aos usuários.
+    - **Benefícios:**
+
+      - **Desempenho:** Conteúdo pré-renderizado é rapidamente acessível e distribuído globalmente.
+      - **Carga do Servidor:** Reduzida, pois o conteúdo não precisa ser gerado dinamicamente para cada solicitação.
+      - **SEO:** Melhoria na indexação por mecanismos de busca devido ao conteúdo já estar disponível no carregamento da página.
+
+    - **Aplicação Ideal:** Adequada para páginas com dados estáticos ou compartilhados, como postagens de blog ou páginas de produto.
+
+  - **Renderização Dinâmica:**
+
+    - **Conceito:** A renderização dinâmica processa os dados em tempo real com base na solicitação do usuário, sendo mais apropriada para conteúdos que mudam frequentemente ou são específicos para cada usuário.
+
+  - **Simulação de Busca Lenta de Dados:**
+
+    - **Problema:** A lentidão em uma busca de dados pode impactar negativamente a performance da aplicação.
+    - **Simulação:** Ao adicionar um atraso artificial de 3 segundos em `fetchRevenue()` no arquivo `data.ts`, observa-se que a página inteira fica bloqueada enquanto os dados são carregados, demonstrando que a performance da aplicação é limitada pela busca de dados mais lenta.
+
+  A compreensão e aplicação eficaz dos conceitos de renderização estática e dinâmica são essenciais para otimizar a performance e a experiência do usuário em aplicações Next.js. A renderização estática é ideal para conteúdo fixo, enquanto a renderização dinâmica é necessária para dados em tempo real, com atenção especial à gestão de buscas lentas.
+
+  ***
