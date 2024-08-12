@@ -148,3 +148,41 @@
   A criação de rotas e layouts no Next.js é essencial para o desenvolvimento de aplicações organizadas e escaláveis, permitindo que diferentes partes da interface do usuário sejam compartilhadas ou isoladas conforme necessário.
 
 ---
+
+## 09/08/2024
+
+### Capítulos Estudados
+
+#### 1. **Capítulo 5: Navegando entre páginas**
+
+- **Principais Aprendizados:**
+
+  - Uso do componente `next/link` para navegação entre páginas
+  - Exibição de links ativos com o hook `usePathname()`
+  - Funcionamento da navegação no Next.js
+  - Otimização da navegação com divisão automática de código e pré-busca
+
+- **Resumo:**
+
+  Neste capítulo, são abordadas as melhores práticas para implementar navegação entre páginas em uma aplicação Next.js, substituindo o uso tradicional de elementos `<a>` pelo componente `<Link />`. Este componente permite a navegação no lado do cliente utilizando JavaScript, evitando atualizações completas da página e proporcionando uma experiência mais fluida para o usuário.
+
+  - **Uso do Componente `<Link />`:**
+
+    - **Implementação:** O componente `<Link />` é utilizado para substituir tags `<a>` tradicionais, permitindo uma navegação mais eficiente entre as páginas sem recarregar completamente o conteúdo.
+    - **Vantagem:** A utilização do `<Link />` em vez de `<a>` resulta em transições mais suaves, pois o Next.js executa a renderização de partes do aplicativo no servidor, sem a necessidade de atualizar a página inteira.
+
+  - **Divisão de Código e Pré-Busca:**
+
+    O Next.js aprimora a navegação ao dividir automaticamente o código por rotas, isolando páginas para que erros não afetem o restante do aplicativo. Além disso, realiza a pré-busca de código quando os links aparecem na viewport, carregando as páginas vinculadas em segundo plano e tornando as transições quase instantâneas.
+
+    - **Divisão de Código:** A aplicação é segmentada por rotas, o que isola erros e melhora a resiliência.
+    - **Pré-Busca:** Quando os links estão na viewport, o Next.js pré-carrega as páginas, otimizando a velocidade de navegação.
+
+  - **Exibição de Links Ativos:**
+
+    - **Hook `usePathname()`:** O Next.js fornece o hook `usePathname()` para identificar o caminho atual da URL e aplicar estilos condicionais aos links, destacando o link ativo na interface.
+    - **Estilização Condicional:** Combinando o `usePathname()` com a biblioteca `clsx`, é possível aplicar classes CSS que destacam visualmente o link correspondente à página atual.
+
+  A aplicação do componente `<Link />`, juntamente com a otimização da navegação e a exibição de links ativos, melhora significativamente a experiência do usuário em aplicações Next.js, tornando a navegação mais rápida e intuitiva.
+
+---
