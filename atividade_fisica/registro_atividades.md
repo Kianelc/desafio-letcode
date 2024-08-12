@@ -9,6 +9,8 @@
 - [Dia 5 - 06/08/2024](#dia-5---06082024)
 - [Dia 6 - 07/08/2024](#dia-6---07082024)
 - [Dia 7 - 08/08/2024](#dia-7---08082024)
+- [Dia 8 - 09/08/2024](#dia-8---09082024)
+- [Dia 9 - 10/08/2024](#dia-9---10082024)
 
 ---
 
@@ -66,3 +68,14 @@ As atividades físicas são monitoradas pelo aplicativo Strava.
 - **Duração:** 44min 9s
 - **Distância:** 6,1 km
 - **Link do Strava:** [Link para a atividade no Strava](https://strava.app.link/02eKzrAaULb)
+
+### Dia 8 - 09/08/2024
+
+- **Dia de descanso - sem atividades registradas**
+
+### Dia 9 - 10/08/2024
+
+- **Atividade:** Caminhada
+- **Duração:** 41min 13s
+- **Distância:** 2,65 km
+- **Link do Strava:** [Link para a atividade no Strava](https://strava.app.link/484dhjzFYLb)
