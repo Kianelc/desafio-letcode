@@ -6,6 +6,7 @@
 - [Dia 02 - Estudo do Capítulo 3 e 4 de Next](#08082024)
 - [Dia 03 - Estudo do Capítulo 5 e 6 de Next](#09082024)
 - [Dia 04 - Estudo do Capítulo 7 e 8 de Next](#10082024)
+- [Dia 05 - Estudo do Capítulo 9 de Next](#11082024)
 
 ---
 
@@ -297,4 +298,50 @@
 
   A compreensão e aplicação eficaz dos conceitos de renderização estática e dinâmica são essenciais para otimizar a performance e a experiência do usuário em aplicações Next.js. A renderização estática é ideal para conteúdo fixo, enquanto a renderização dinâmica é necessária para dados em tempo real, com atenção especial à gestão de buscas lentas.
 
-  ***
+---
+
+## 11/08/2024
+
+### Capítulos Estudados
+
+#### 1. **Capítulo 9: Transmissão**
+
+- **Principais Aprendizados:**
+
+  - Conceito de streaming e sua aplicação em Next.js
+  - Implementação de streaming com `loading.tsx` e `Suspense`
+  - Uso de esqueletos de carregamento para melhorar a experiência do usuário
+  - Grupos de rotas para organização lógica sem impacto na URL
+  - Decisão sobre onde colocar os limites de `Suspense` para otimização da renderização
+
+- **Resumo:**
+
+  Neste capítulo, são abordadas técnicas para melhorar a experiência do usuário em casos de carregamento lento de dados, utilizando o conceito de streaming em Next.js. A transmissão de dados permite que partes da interface sejam exibidas progressivamente, sem que o usuário precise esperar pelo carregamento completo da página.
+
+  - **Conceito de Streaming:**
+
+    - **Definição:** Streaming é a técnica de transmitir partes de uma página à medida que os dados ficam disponíveis, permitindo que o usuário interaja com partes da interface sem esperar pelo carregamento completo.
+    - **Benefícios:** Essa abordagem melhora a usabilidade, especialmente em situações onde a busca de dados é lenta, pois permite que componentes estáticos sejam carregados e interagidos antes que o restante da página esteja disponível.
+
+  - **Implementação com `loading.tsx` e `Suspense`:**
+
+    - **`loading.tsx`:** Um arquivo especial do Next.js que permite criar uma interface de fallback enquanto os dados dinâmicos são carregados.
+    - **`Suspense`:** Utilizado para adiar a renderização de componentes específicos até que suas condições de carregamento sejam atendidas, mostrando um fallback até que os dados estejam disponíveis.
+
+  - **Esqueletos de Carregamento:**
+
+    - **Definição:** Um esqueleto de carregamento é uma versão simplificada da interface do usuário, exibida enquanto o conteúdo dinâmico está sendo transmitido.
+    - **Implementação:** Esqueletos podem ser utilizados em conjunto com `loading.tsx` para melhorar a percepção de velocidade e a experiência do usuário.
+
+  - **Grupos de Rotas:**
+
+    - **Uso:** Permitem organizar os arquivos de forma lógica sem alterar a estrutura das URLs. São úteis para aplicar `loading.tsx` apenas a determinadas partes da aplicação.
+    - **Exemplo:** Criar uma pasta `(overview)` dentro de `/dashboard` permite que o `loading.tsx` seja aplicado apenas à visão geral do painel, sem afetar outras rotas.
+
+  - **Decisão sobre Limites de `Suspense`:**
+    - **Considerações:** A escolha de onde colocar os limites de `Suspense` depende de como se deseja que a página seja carregada e da prioridade dos conteúdos.
+    - **Estratégias:** Pode-se optar por transmitir a página inteira, transmitir componentes individualmente ou criar efeitos escalonados, dependendo das necessidades do aplicativo.
+
+  A aplicação de técnicas de streaming e o uso de esqueletos de carregamento, aliados à organização lógica através de grupos de rotas, proporcionam uma experiência de usuário mais fluida e responsiva em aplicações Next.js.
+
+---
