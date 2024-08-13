@@ -79,3 +79,10 @@ As atividades físicas são monitoradas pelo aplicativo Strava.
 - **Duração:** 41min 13s
 - **Distância:** 2,65 km
 - **Link do Strava:** [Link para a atividade no Strava](https://strava.app.link/484dhjzFYLb)
+
+### Dia 10 - 12/08/2024
+
+- **Atividade:** Corrida
+- **Duração:** 34min 9s
+- **Distância:** 5,0 km
+- **Link do Strava:** [Link para a atividade no Strava](https://strava.app.link/xKm2hMm30Lb)
