@@ -7,6 +7,7 @@
 - [Dia 03 - Estudo do Capítulo 5 e 6 de Next](#09082024)
 - [Dia 04 - Estudo do Capítulo 7 e 8 de Next](#10082024)
 - [Dia 05 - Estudo do Capítulo 9 de Next](#11082024)
+- [Dia 06 - Estudo do Capítulo 10 de Next](#12082024)
 
 ---
 
@@ -345,3 +346,41 @@
   A aplicação de técnicas de streaming e o uso de esqueletos de carregamento, aliados à organização lógica através de grupos de rotas, proporcionam uma experiência de usuário mais fluida e responsiva em aplicações Next.js.
 
 ---
+
+## 12/08/2024
+
+### Capítulos Estudados
+
+#### 1. **Capítulo 10: Pré-renderização parcial**
+
+- **Principais Aprendizados:**
+
+  - Introdução à Pré-renderização Parcial (Partial Prerendering - PPR)
+  - Diferenças entre rotas estáticas e dinâmicas
+  - Implementação de PPR no Next.js 14
+  - Uso do Suspense do React para integrar renderização estática e dinâmica
+
+- **Resumo:**
+
+  Este capítulo explora o conceito de Pré-renderização Parcial (PPR), um recurso experimental no Next.js 14, que permite a combinação de renderização estática e dinâmica na mesma rota, proporcionando uma experiência mais fluida para o usuário.
+
+  - **O que é Pré-renderização Parcial:**
+
+    - **Definição:** A PPR possibilita a renderização de um shell estático, enquanto o conteúdo dinâmico é carregado assíncronamente, oferecendo um carregamento inicial mais rápido e uma experiência otimizada.
+    - **Exemplo:** Em uma rota de e-commerce, as informações do produto podem ser renderizadas estaticamente, enquanto o carrinho do usuário e os produtos recomendados são carregados dinamicamente.
+
+  - **Diferenças entre Rotas Estáticas e Dinâmicas:**
+
+    - **Rotas Estáticas:** Componentes que não dependem de dados e não são personalizados para o usuário podem ser renderizados estaticamente, garantindo maior eficiência.
+    - **Rotas Dinâmicas:** Componentes que dependem de dados dinâmicos ou personalizados, como carrinhos de compra ou recomendações, são carregados dinamicamente para fornecer uma experiência personalizada.
+
+  - **Implementação de Pré-renderização Parcial:**
+
+    - **Habilitação:** A PPR é habilitada ao adicionar uma configuração específica no arquivo `next.config.mjs`, permitindo que rotas específicas adotem essa abordagem.
+    - **Integração com Suspense:** O Suspense do React é utilizado para adiar a renderização de partes do aplicativo até que os dados necessários sejam carregados, mantendo a interface do usuário responsiva.
+
+    - **Vantagem:** O Next.js pré-renderiza as partes estáticas da rota, enquanto o conteúdo dinâmico é adiado até que seja necessário, melhorando o desempenho geral.
+
+  A Pré-renderização Parcial oferece uma maneira eficiente de combinar o melhor dos mundos estático e dinâmico, otimizando o carregamento de páginas e proporcionando uma experiência de usuário mais fluida em aplicações Next.js.
+
+  ***
