@@ -57,3 +57,42 @@
   Além disso, o capítulo aborda como atualizar faturas utilizando segmentos de rota dinâmicos baseados em IDs. Explica-se como pré-preencher formulários com dados já existentes e realizar consultas paralelas para buscar informações da fatura e clientes.
 
 ---
+
+## 15/08/2024
+
+### Capítulos Estudados
+
+#### 1. **Capítulo 13: Lidando com Erros**
+
+- **Principais Aprendizados:**
+
+  - Implementar `try/catch` nas Server Actions para tratamento de erros.
+  - Utilizar o arquivo `error.tsx` para capturar erros inesperados e exibir uma UI de fallback.
+  - Configurar o `error.tsx` como um componente cliente que aceita os parâmetros `error` e `reset`.
+  - Empregar a função `notFound` para lidar com erros 404 ao buscar recursos inexistentes.
+  - Criar um arquivo `not-found.tsx` para exibir uma interface de erro específica.
+
+- **Resumo:**
+
+O capítulo aborda estratégias de tratamento de erros em Next.js, com foco no uso de arquivos e funções específicas para gerenciar falhas e apresentar interfaces de fallback. Inicialmente, é apresentado o uso de try/catch nas Server Actions, permitindo a captura e tratamento de erros durante a execução dessas ações. É destacado que a função redirect deve ser chamada fora do bloco try/catch para evitar que seja capturada como erro.
+
+O capítulo também introduz o error.tsx, um arquivo especial utilizado para definir limites de interface de usuário (UI) em segmentos de rota, servindo como um mecanismo para capturar erros inesperados e exibir uma UI de fallback ao usuário. O arquivo deve ser configurado como um componente cliente e aceita dois parâmetros: error, que é uma instância do objeto de erro nativo do JavaScript, e reset, uma função para redefinir o limite de erro e tentar renderizar novamente o segmento de rota.
+
+Além disso, o capítulo explica o uso da função notFound para lidar com erros 404, quando um recurso solicitado não é encontrado. Ao buscar um recurso inexistente, pode-se invocar notFound para exibir uma interface de erro específica, utilizando o arquivo not-found.tsx.
+
+### 2. **Capítulo 14: Melhorando a acessibilidade**
+
+- **Principais Aprendizados:**
+
+  - Uso de práticas para garantir a acessibilidade em formulários.
+  - Implementação da validação de formulários no lado do servidor.
+  - Utilização do React `useActionState` hook para exibição de erros.
+  - Aplicação de técnicas de acessibilidade, como rótulos de ária.
+
+- **Resumo:**
+
+O Capítulo 14 aborda a melhoria da acessibilidade em formulários e a validação do lado do servidor em aplicações Next.js. O conceito de acessibilidade é apresentado como a prática de criar aplicativos web que sejam utilizáveis por todos, incluindo pessoas com deficiências. São exploradas práticas como o uso do plugin `eslint-plugin-jsx-a11y` para detectar problemas de acessibilidade, a utilização de HTML semântico, rotulagem adequada e contornos de foco em formulários para melhorar a navegação.
+
+O capítulo também foca na validação de formulários, explicando a diferença entre validação no cliente e no servidor, e como o hook `useActionState` do React pode ser utilizado para gerenciar e exibir erros de formulário. A implementação de validação no servidor é exemplificada com o uso de Zod para garantir que os dados do formulário estejam no formato correto antes de serem processados. Além disso, são discutidas técnicas para melhorar a acessibilidade dos formulários, incluindo a adição de rótulos de ária, que permitem aos leitores de tela comunicar erros aos usuários de forma eficaz.
+
+---
