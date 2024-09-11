@@ -1,24 +1,72 @@
-# DESAFIO LETCODE
+# Dashboard Financeiro
 
-## Descrição
+## Visão Geral
 
-O #DESAFIOLETCODE é um desafio de 20 dias que visa promover a consistência nos estudos de React e Next.js, a prática de atividades físicas diárias e o desenvolvimento de um projeto pessoal utilizando essas tecnologias. Durante esse período, você se dedicará a estudar um capítulo por dia e praticar o que aprendeu, além de registrar suas atividades físicas diárias.
+O **Dashboard Financeiro** é uma aplicação desenvolvida com Next.js e React, projetada para fornecer uma visualização robusta e estilizada de dados financeiros. Este projeto abrange uma ampla gama de conceitos e práticas de desenvolvimento com Next.js, incluindo estilização, otimização, roteamento, manipulação de dados, autenticação, entre outros.
 
-## Duração
+## Recursos Aprendidos
 
-- **Início:** 01/08/2024
-- **Término:** 20/08/2024
-- **Período:** 20 dias (exceto aos domingos)
+1. **Estilo**: Diferentes métodos para estilizar seu aplicativo usando Tailwind CSS e Heroicons.
+2. **Otimizações**: Técnicas para otimizar imagens, links e fontes para melhorar a performance do aplicativo.
+3. **Roteamento**: Criação de layouts e páginas aninhadas utilizando o sistema de roteamento do Next.js.
+4. **Busca de Dados**: Configuração de banco de dados no Vercel e práticas recomendadas para busca e streaming de dados.
+5. **Pesquisa e Paginação**: Implementação de funcionalidades de pesquisa e paginação usando parâmetros de URL.
+6. **Mutação de Dados**: Manipulação de dados com ações do React Server e revalidação do cache do Next.js.
+7. **Tratamento de Erros**: Gerenciamento de erros 404 e outros erros não encontrados.
+8. **Validação de Formulários e Acessibilidade**: Validação de formulários no lado do servidor e melhorias na acessibilidade do aplicativo.
+9. **Autenticação**: Implementação de autenticação com NextAuth.js e middleware para proteção de rotas.
+10. **Metadados**: Adição de metadados e preparação para compartilhamento social.
 
-## Objetivos Diários
+## Scripts
 
-1. **Estudo:** 1 hora de estudo focado em React e Next.js.
-2. **Atividade Física:** 1 atividade física diária.
-3. **Projeto Pessoal:** Dedicar tempo ao desenvolvimento de um projeto pessoal envolvendo React e Next.js.
+Os seguintes scripts estão configurados no projeto:
 
-### Avaliação
+- `build`: Compila o projeto para produção usando o comando `next build`.
+- `dev`: Inicia o servidor de desenvolvimento com `next dev`.
+- `start`: Inicia o servidor de produção com `next start`.
+- `lint`: Executa o linter com `next lint`.
 
-O método de avaliação será através das interações na comunidade, com participação ativa nos stories utilizando a hashtag #desafioLetCode.
+## Configuração do Projeto
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/Kianelc/desafio-letcode.git
+   cd desafio-letcode
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Abra o navegador e acesse `http://localhost:3000`.
+
+## Contribuição
+
+Contribuições são bem-vindas! Para contribuir com o projeto, siga os passos abaixo:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para a sua feature (`git checkout -b minha-feature`).
+3. Faça commits das suas alterações (`git commit -am 'Adiciona nova feature'`).
+4. Faça push da branch para o seu fork (`git push origin minha-feature`).
+5. Abra um Pull Request no repositório principal.
+
+### Cursos Realizados
+
+- [Learn Next.js](https://nextjs.org/learn)
+- [Learn React Foundations](https://nextjs.org/learn/react-foundations)
+
+## Link para o Projeto
+
+[GitHub Projects](https://github.com/users/Kianelc/projects/2)
 
 ## Planejamento de Estudos
 
@@ -45,32 +93,4 @@ O método de avaliação será através das interações na comunidade, com part
 
 - [x] [Estudo do Capítulo 11 e 12 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/14)
 - [x] [Estudo do Capítulo 13 e 14 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/15)
-- [ ] [Estudo do Capítulo 15 e 16 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/16)
-- [ ] [Revisão dos capítulos 11-16 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/17)
-- [ ] [Revisão geral dos capítulos 1-16 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/18)
-- [ ] [Revisão final e prática geral](https://github.com/Kianelc/desafio-letcode/issues/19)
-- [ ] [Relatório Final e Avaliação](https://github.com/Kianelc/desafio-letcode/issues/20)
-
-## Estrutura do Repositório
-
-- **/estudos/registro_estudos.md**: Contém registros diários dos estudos.
-- **/estudos/materiais_adicionais**: Contém resumos complementares e imagens de apoio para o conteúdo estudado.
-- **/atividade_fisica/registro_atividades.md**: Contém um registro das atividades físicas realizadas, com monitoramento feito pelo aplicativo Strava.
-- **/projeto_pessoal**: Contém o código-fonte e arquivos relacionados ao projeto pessoal.
-
-## Projeto Pessoal
-
-O projeto final será desenvolvido utilizando React e Next.js e será o resultado do aprendizado ao longo do desafio.
-
-### Cursos Realizados
-
-- [Learn Next.js](https://nextjs.org/learn)
-- [Learn React Foundations](https://nextjs.org/learn/react-foundations)
-
-## Monitoramento das Atividades Físicas
-
-O monitoramento das atividades físicas será realizado utilizando o aplicativo Strava. As informações das atividades serão registradas no arquivo `registro_atividades.md`.
-
-## Link para o Projeto
-
-[GitHub Projects](https://github.com/users/Kianelc/projects/2)
+- [x] [Estudo do Capítulo 15 e 16 de Next.js](https://github.com/Kianelc/desafio-letcode/issues/16)
