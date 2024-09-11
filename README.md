@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-Este projeto é um dashboard financeiro construído com Next.js e React. O objetivo é fornecer uma aplicação robusta e estilizada para visualizar e gerenciar dados financeiros. O curso abordou diversos aspectos do desenvolvimento com Next.js, incluindo estilização, otimização, roteamento, busca e mutação de dados, autenticação, e muito mais.
+O **Dashboard Financeiro** é uma aplicação desenvolvida com Next.js e React, projetada para fornecer uma visualização robusta e estilizada de dados financeiros. Este projeto abrange uma ampla gama de conceitos e práticas de desenvolvimento com Next.js, incluindo estilização, otimização, roteamento, manipulação de dados, autenticação, entre outros.
 
 ## Recursos Aprendidos
 
