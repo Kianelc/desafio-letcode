@@ -31,8 +31,8 @@ Os seguintes scripts estão configurados no projeto:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/Kianelc/desafio-letcode.git
-   cd desafio-letcode
+   git clone https://github.com/Kianelc/finance-dashboard.git
+   cd finance-dashboard
    ```
 
 2. Instale as dependências:
